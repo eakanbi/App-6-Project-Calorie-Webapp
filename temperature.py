@@ -46,7 +46,7 @@ from the timeanddate.com/weather webpage"""
             return temperature
         
     
-if __name__ == '__main__':
-    temperature =Temperature(country="usa", city="san francisco")
-    print(temperature.get())
+# if __name__ == '__main__':
+    # temperature =Temperature(country="usa", city="san francisco")
+    # print(temperature.get())
     # print(temperature._scrape())
