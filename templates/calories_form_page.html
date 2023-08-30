@@ -5,10 +5,11 @@
     <title>Title</title>
     <link rel="stylesheet" href="static/main.css">
 </head>
+{% block content %}
 <body>
-<h2>Calories Calculation Form</h2>
+<a href ="{{url_for('index')}}"><h2 class="title" >Calories Calculation Form</h2></a>
 <p>Fill in the form and click the button to know how many calories you need!</p>
-<form action="/calories_form" method="post">
+<form action="" method="post">
     <p>Let's get some info about you first.</p>
     {{caloriesform.weight.label}} {{caloriesform.weight}}
     <br>
@@ -31,4 +32,5 @@
     {% endif %}
 </form>
 </body>
+{% endblock %}
 </html>
